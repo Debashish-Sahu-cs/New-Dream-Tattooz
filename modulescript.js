@@ -117,3 +117,6 @@ loadFeedbacks();
 startAutoScroll();
 feedbackContainer.addEventListener("mouseenter", stopAutoScroll);
 feedbackContainer.addEventListener("mouseleave", startAutoScroll);
+
+feedbackContainer.addEventListener("touchstart", stopAutoScroll);
+feedbackContainer.addEventListener("touchend", startAutoScroll);
